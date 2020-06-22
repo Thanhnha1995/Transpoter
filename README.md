@@ -1,4 +1,6 @@
 # Transpoter
+project is java applcation
+you shoud be install android studio and java jdk 8u.
 remember apply update,
 change ip server,
 add sql in xampp,
