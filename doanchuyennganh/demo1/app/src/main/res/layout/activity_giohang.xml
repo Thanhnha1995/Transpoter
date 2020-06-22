@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activity.GiohangActivity">
+    <android.support.v7.widget.Toolbar
+        android:background="#a2a4a4"
+        app:title="Giỏ Hàng"
+        app:titleTextColor="@color/whote"
+        android:id="@+id/tb_giohang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_weight = "7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txt_thongbaogh"
+                android:textSize="30sp"
+                android:text="Giỏ hàng trống"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/lsv_giohang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/Tong_gh"
+                    android:textColor="#f20"
+                    android:text="@string/total"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right|center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/GT_giohang"
+                    android:textColor="#f20"
+                    android:text="@string/giatotal"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/spinner"
+        android:textColor="#03842c"
+        android:textSize="20sp"
+        android:text="Mua Hàng "
+        android:layout_weight="1"
+        android:id="@+id/bt_giohang"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/spinner"
+        android:textColor="#03842c"
+        android:textSize="20sp"
+        android:text="Tiếp Tục Mua Hàng"
+        android:layout_weight="1"
+        android:id="@+id/bt_muahang"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+</LinearLayout>

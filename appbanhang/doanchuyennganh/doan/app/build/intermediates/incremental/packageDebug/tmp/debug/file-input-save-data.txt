@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon Jun 22 13:28:21 ICT 2020
+0.baseType=DIRECTORY
+0.base=/Users/admin/Desktop/Source/Android/Transpoter/appbanhang/doanchuyennganh/doan/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1

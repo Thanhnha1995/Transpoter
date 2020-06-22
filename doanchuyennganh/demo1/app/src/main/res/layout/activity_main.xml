@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/gray_white"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/D_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <android.support.v7.widget.Toolbar
+                   android:id="@+id/manghinhchinh_toolbar"
+                   android:layout_width="match_parent"
+                   app:titleTextColor="@color/whote"
+                    app:title="@string/app_name"
+                   android:layout_height="?attr/actionBarSize"
+                   android:background="#4665ce">
+
+               </android.support.v7.widget.Toolbar>
+
+               <ViewFlipper
+                   android:id="@+id/vFliper"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp">
+
+               </ViewFlipper>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:weightSum="2"
+                   android:orientation="vertical">
+
+                   <!--<android.support.v7.widget.RecyclerView-->
+                   <!--android:id="@+id/recyle_view"-->
+                   <!--android:layout_width="match_parent"-->
+                   <!--android:layout_height="match_parent"/>-->
+
+                   <LinearLayout
+
+                       android:id="@+id/laptop"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                        <LinearLayout
+
+                            android:id="@+id/xemthemdt"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="25dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/back"
+                                android:text="Điện Thọai" />
+                            <TextView
+                                android:layout_marginLeft="190dp"
+                               android:layout_gravity="center"
+                                android:id="@+id/xem"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/graymain"
+                                android:text="xem thêm" />
+                        </LinearLayout>
+
+
+                       <android.support.v7.widget.RecyclerView
+                           android:id="@+id/re_dienthoai"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                   </LinearLayout>
+
+                   <LinearLayout
+
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+                       <LinearLayout
+                           android:id="@+id/click"
+                           android:orientation="horizontal"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:textSize="25dp"
+                               android:id="@+id/dt"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/back"
+                               android:text="Laptop" />
+                           <TextView
+                               android:layout_marginLeft="230dp"
+                               android:layout_gravity="center"
+                               android:id="@+id/xemthem"
+                               android:textSize="15dp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/graymain"
+                               android:text="xem thêm" />
+                       </LinearLayout>
+
+
+                       <android.support.v7.widget.RecyclerView
+                           android:id="@+id/re_laptop"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+                   </LinearLayout>
+               </LinearLayout>
+           </LinearLayout>
+       </ScrollView>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/n_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <ListView
+                android:id="@+id/List_manghinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

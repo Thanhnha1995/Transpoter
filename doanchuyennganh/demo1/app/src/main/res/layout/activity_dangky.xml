@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DangkyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_signin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_backLogin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imgtest"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/express" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_usernameLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:hint="@string/dk"
+                        android:textColor="#111"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_passLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:drawableLeft="@drawable/password"
+                        android:hint="@string/pas"
+                        android:password="true"
+                        android:textColor="#111"
+                        android:textSize="15dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_saveLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:text="@string/remeber"
+                            android:textColor="#111" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/buttoncolor"
+                            android:text="@string/create"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btn_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/buttoncolor"
+                            android:text="@string/creatername"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <Button
+                            android:background="@drawable/buttoncolor"
+                            android:id="@+id/btn_forgetpass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+
+                            android:text="Quên Tài Khoản"
+                            android:textColor="@color/gray_white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_backSignup"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/back" />
+
+                <ImageView
+                    android:layout_width="233dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/express" />
+
+                <EditText
+                    android:id="@+id/et_tkSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:hint="@string/dknam"
+                    android:textColor="#111"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/mail"
+                    android:hint="@string/emal"
+                    android:textColor="#111"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/et_diachi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/maps"
+                    android:hint="@string/adress"
+                    android:textColor="#111"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/et_passSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/password"
+                    android:hint="@string/pass1"
+                    android:password="true"
+                    android:textColor="#111"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/et_pwtrue"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/password"
+                    android:hint="@string/pass"
+                    android:password="true"
+                    android:textColor="#111"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/phone"
+                    android:hint="@string/phonenem"
+                    android:textColor="#111"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_dk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttoncolor"
+                    android:text="@string/dkname"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reset"
+                android:layout_width="match_parent"
+                android:layout_height="565dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_BackQuenpass"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/back" />
+
+                <ImageView
+                    android:layout_width="233dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/express" />
+
+                <EditText
+                    android:id="@+id/edt_mailReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/mail"
+                    android:hint="@string/dkemal"
+                    android:textColor="@color/back" />
+                <EditText
+                    android:id="@+id/edt_passR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:password="true"
+                    android:visibility="gone"
+                    android:drawableLeft="@drawable/password"
+                    android:hint="@string/passold"
+                    android:textColor="@color/back" />
+                <EditText
+                    android:id="@+id/edt_passReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:visibility="visible"
+                    android:password="true"
+                    android:drawableLeft="@drawable/password"
+                    android:hint="@string/passnew"
+                    android:textColor="@color/back" />
+                <EditText
+                    android:id="@+id/edt_passNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:visibility="gone"
+                    android:password="true"
+                    android:drawableLeft="@drawable/password"
+                    android:hint="@string/pasworknewold"
+                    android:textColor="@color/back" />
+                <Button
+                    android:id="@+id/btn_Reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_dk"
+                    android:text="@string/change" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
