@@ -1,5 +1,5 @@
 # Transpoter
-project is java applcation
+project is java application,
 you shoud be install android studio and java jdk 8u.
 remember apply update,
 change ip server,
