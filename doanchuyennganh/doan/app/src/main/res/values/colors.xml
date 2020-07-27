@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="azure">#f1f5f8</color>
+    <color name="pink">#D81B60</color>
+    <color name="dangky">#6E2C90</color>
+    <color name="gray">#b6b2b1</color>
+    <color name="gray_white">#e1dfde</color>
+    <color name="trong">#00000000</color>
+    <color name="vang">#FFFF99</color>
+    <color name="back">#111</color>
+    <color name="graymain">#868484</color>
+    <color name="ok">#FF9900</color>
+    <color name="datroi">#FF9966</color>
+    <color name="datroinhat">#FF9999</color>
+    <color name="app_color">#fdfdfd</color>
+</resources>

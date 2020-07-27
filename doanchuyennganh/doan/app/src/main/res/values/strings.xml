@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">doancn</string>
+    <string name="Manager">Manager</string>
+    <string name="Donhang">Orders</string>
+    <string name="name">Full name:</string>
+    <string name="namefull">David Nguyen</string>
+    <string name="phonne">Number Phone:</string>
+    <string name="phonehine">0120699</string>
+    <string name="nameDAC">Address</string>
+    <string name="vn">VN</string>
+    <string name="namesp">Products:</string>
+    <string name="namespfull">samsung galaxy s9</string>
+    <string name="sls">amount:</string>
+    <string name="sl">1</string>
+    <string name="gia">unit price:</string>
+    <string name="giathanh">160000</string>
+    <string name="namelg">Press ID acount of your</string>
+    <string name="namelog">Press Password acount of your</string>
+    <string name="LoginAccount">Login</string>
+    <string name="createname">nhập tên của bạn</string>
+    <string name="createinformationchating">nhập nội dung chat</string>
+    <string name="btn_chat">Chat</string>
+    <string name="btn_sign">Rgistration</string>
+</resources>
