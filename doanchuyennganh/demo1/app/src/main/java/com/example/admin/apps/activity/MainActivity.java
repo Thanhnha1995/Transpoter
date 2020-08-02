@@ -287,8 +287,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         ArrayList<String> mangquangcao = new ArrayList<>();
         //banner quan cao
-        mangquangcao.add("http://sonycenter.sony.com.vn/Data/Sites/1/News/372/1200x400.jpg");
-        mangquangcao.add("https://phonegallery.gr/images/companies/1/BANNER(1200X400)_s9_ENG_PHONEGALLERY.jpg?1520600122871");
+        mangquangcao.add("https://clickbuy.com.vn/uploads/2019/03/iPhone-7-jetback.png");
+        mangquangcao.add("https://clickbuy.com.vn/uploads/2019/03/iPhone-7-jetback.png");
         for (int i = 0; i < mangquangcao.size(); i++) {
             ImageView imageView = new ImageView(getApplicationContext());
             Picasso.with(getApplicationContext()).load(mangquangcao.get(i)).into(imageView);
