@@ -1,17 +1,14 @@
 package com.example.admin.doancn.Activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.admin.doancn.Model.KhachHangInfo;
-import com.example.admin.doancn.Model.Tepkh;
 import com.example.admin.doancn.R;
-
-import java.text.DecimalFormat;
 
 public class ChititietkhachhangActivity extends AppCompatActivity {
     Toolbar tb_main;

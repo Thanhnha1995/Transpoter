@@ -1,4 +1,0 @@
-#Sat Dec 15 08:28:16 ICT 2018
-base.0=C\:\\Users\\Admin\\Desktop\\laptrinh\\doanchuyennganh\\doan\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
-path.0=classes.dex
-renamed.0=classes.dex
